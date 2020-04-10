@@ -8,7 +8,8 @@ def main():
     config_names = []
     list_dirs = os.walk('data_table')
     #gen.gen_enum('data/Enum.xlsx','../client/Assets/Scripts/Config')
-    out_dictionary = '../JekoClient/GameClient/JekoClient/Assets\Script\Data\TableData'
+    client_project_path = "../JekoClient/Assets"
+    out_dictionary = client_project_path + '\Script\Data\TableData'
     for root, dirs, files in list_dirs:
         # print(root)
         # for d in dirs:

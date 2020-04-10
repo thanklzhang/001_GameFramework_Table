@@ -7,7 +7,8 @@ def main():
     #find all file
     list_dirs = os.walk('data_table')
     res_file_name = "ResourcePath"  #资源管理表格文件名称
-    res_out_path = '../JekoClient/GameClient/JekoClient/Assets\Script\Data\TableData' #导出资源枚举 cs 文件 地址
+    client_project_path = "../JekoClient/Assets"
+    res_out_path = client_project_path + '\Script\Data\TableData' #导出资源枚举 cs 文件 地址
     for root, dirs, files in list_dirs:
         # print(root)
         # for d in dirs:
@@ -17,7 +18,7 @@ def main():
             splitStr = os.path.splitext(f)
             if splitStr[1] == '.xlsx' and not '~$' in splitStr[0]:
                 #generate json
-                gen.gen(os.path.join(root, f),'../JekoClient/GameClient/JekoClient/Assets/Resources/Config/ConfigData','json',res_file_name,res_out_path)
+                gen.gen(os.path.join(root, f),client_project_path + '/Resources/Config/ConfigData','json',res_file_name,res_out_path)
                     
 if __name__ == "__main__":
     main()

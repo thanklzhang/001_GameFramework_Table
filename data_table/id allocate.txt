@@ -1,14 +1,1 @@
-100000 Skill
-
-170000 SkillMove
-130000 Buff
-110000 Calculate
-120000 Projectile
-
-200000 ItemConfig
-300000 HeroManagementConfig
-310000 HeroManagementUpgradeConfig
-
-400000 DrawingConfig
-500000 ItemStarConfig
-600000 ItemQualityConfig
+1000000000+ resourceId
